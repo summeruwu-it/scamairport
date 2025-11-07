@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/giaodientong.css">
+    <link rel="stylesheet" href="../css/khaitrienfont.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <title>Menu Quán Scam</title>
+</head>
+<body>
+    <!--<div class="background"><img src="../source/img/test.jpg"></div>-->
+    <div class="background">
+        <video loop muted autoplay><source src="../source/video/scam.mp4"></video>
+    </div>    <nav>
+        <ul class="dieuhuong">
+            <li><a href="/html/trangchu.html">Trang chủ</a></li>
+            <li><a href="/html/menu.html" style="color: aliceblue;font-weight: 1000;">Menu</a></li>
+            <li><a href="/html/about.html">About</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="dieuhuongphu">
+            <li><a href="/html/trangchu.html">Trang chủ</a></li>
+            <li><a style="color:rgb(255, 159, 159);" href="/html/menu.html">Menu</a></li>
+            <li><a href="/html/order.html">Order</a></li>
+        </ul>
+    </nav>
+    <div class="slogan"><h1 class="gioithieu">Lướt xuống <br> để xem menu</h1></div>
+    <div class="luachonmuc">
+        <div class="demuc"><p>Xếp theo phân loại nà </p></div>
+            <div class="muc">
+                <div class="muc-chinh" onclick="toggleDropdown()"><h1>Lẩu Nóng</h1></div>
+                <div class="muc-menu" id="chonmuc">
+                    <div class="item"><p>Lẩu Tomyum lớn</p><p class="giasp">179k</p></div>
+                    <div class="item"><p>Lẩu Tomyum nhỏ</p><p class="giasp">119k</p></div>
+                    <div class="item"><p>Lẩu Thái lớn</p><p class="giasp">179k</p></div>
+                    <div class="item"><p>Lẩu Thái nhỏ</p><p class="giasp">119k</p></div>
+                    <div class="item"><p>Lẩu Tứ Xuyên lớn</p><p class="giasp">179k</p></div>
+                    <div class="item"><p>Lẩu Tứ Xuyên nhỏ</p><p class="giasp">119k</p></div>
+                    <div class="item"><p>Lẩu Hải sản lớn</p><p class="giasp">179k</p></div>
+                    <div class="item"><p>Lẩu Hải sản nhỏ</p><p class="giasp">119k</p></div>
+                </div>
+            </div>
+            <hr>
+            <div class="muc">
+                <div class="muc-chinh" onclick="toggleDropdown()"><h1>Mồi Bén</h1></div>
+                <div class="muc-menu" id="chonmuc">
+                    <div class="item"><p>Rau muống xào tỏi</p><p class="giasp">45k</p></div>
+                    <div class="item"><p>Rau rừng xào tỏi</p><p class="giasp">59k</p></div>
+                    <div class="item"><p>Gỏi Bill Bill</p><p class="giasp">79k</p></div>
+                    <div class="item"><p>Gỏi sụn rong biển hải sản</p><p class="giasp">79k</p></div>
+                    <div class="item"><p>Gỏi bò sốt thái</p><p class="giasp">89k</p></div>
+                    <div class="item"><p>Chả giò Bill Bill</p><p class="giasp">69k</p></div>
+                    <div class="item"><p>Chả giò hải sản</p><p class="giasp">89k</p></div>
+                    <div class="item"><p>Đậu hủ chiên giòn</p><p class="giasp">49k</p></div>
+                    <div class="item"><p>Đậu hủ lắc sate</p><p class="giasp">69k</p></div>
+                    <div class="item"><p>Đậu hủ Bill Bill</p><p class="giasp">79k</p></div>
+                    <div class="item"><p>Khoai tây chiên</p><p class="giasp">39k</p></div>
+                    <div class="item"><p>Khoai môn chiên nước mắm</p><p class="giasp">49k</p></div>
+                    <div class="item"><p>Mực sốt mắm cay</p><p class="giasp">99k</p></div>
+                    <div class="item"><p>Mực trứng chiên giòn</p><p class="giasp">119k</p></div>
+                    <div class="item"><p>Mực sốt thái</p><p class="giasp">119k</p></div>
+                    <div class="item"><p>Mực sốt chanh</p><p class="giasp">129k</p></div>
+                    <div class="item"><p>Bao tử Basa xào cải chua</p><p class="giasp">79k</p></div>
+                    <div class="item"><p>Tháp sường thái lớn</p><p class="giasp">159k</p></div>
+                    <div class="item"><p>Tháp sường thái nhỏ</p><p class="giasp">109k</p></div>
+                    <div class="item"><p>Tôm sốt trứng muối hoàng kim</p><p class="giasp">99k</p></div>
+                    <div class="item"><p>Tôm sốt thái</p><p class="giasp">89k</p></div>
+                    <div class="item"><p>Tôm cuộn khoai tây</p><p class="giasp">99k</p></div>
+                    <div class="item"><p>Mì xào bò</p><p class="giasp">79k</p></div>
+                    <div class="item"><p>Mì xào hải sản</p><p class="giasp">99k</p></div>
+                    <div class="item"><p>Cá Diêu Hồng chiên xù</p><p class="giasp">129k</p></div>
+                    <div class="item"><p>Cá trứng chiên giòn</p><p class="giasp">109k</p></div>
+                    <div class="item"><p>Da ếch chiên giòn</p><p class="giasp">69k</p></div>
+                    <div class="item"><p>Cocktail hoành thánh tôm</p><p class="giasp">99k</p></div>
+                    <div class="item"><p>Mộc Nhĩ chua ngọt</p><p class="giasp">49k</p></div>
+                    <div class="item"><p>Ngũ quả kho quẹt</p><p class="giasp">69k</p></div>
+                    <div class="item"><p>Gân bò sốt thái</p><p class="giasp">79k</p></div>
+                    <div class="item"><p>Đậu hủ Basa</p><p class="giasp">59k</p></div>
+                </div>
+            </div>
+            <hr>
+            <div class="muc">
+                <div class="muc-chinh" onclick="toggleDropdown()"><h1>Tiên Tửu</h1></div>
+                <div class="muc-menu" id="chonmuc">
+                    <div class="item"><p>Larue Bạc</p><p class="giasp">16k</p></div>
+                    <div class="item"><p>Tiger Bạc chai</p><p class="giasp">19k</p></div>
+                    <div class="item"><p>Tiger Bạc lon</p><p class="giasp">20k</p></div>
+                    <div class="item"><p>Tiger Bạc nhỏ</p><p class="giasp">16k</p></div>
+                    <div class="item"><p>Heineken Bạc chai</p><p class="giasp">22k</p></div>
+                    <div class="item"><p>Heineken Bạc lớn</p><p class="giasp">22k</p></div>
+                    <div class="item"><p>Heineken Bạc nhỏ</p><p class="giasp">19k</p></div>
+                    <div class="item"><p>Huda lon</p><p class="giasp">16k</p></div>
+                    <div class="item"><p>Huda chai</p><p class="giasp">13k</p></div>
+                    <div class="item"><p>SAIGON Lager lon</p><p class="giasp">15k</p></div>
+                    <div class="item"><p>SAIGON Special chai</p><p class="giasp">18k</p></div>
+                    <div class="item"><p>Soju</p><p class="giasp">79k</p></div>
+                    <div class="item"><p>Rượu Cốm</p><p class="giasp">65k</p></div>
+                </div>
+            </div>
+            <hr>
+            <div class="muc">
+                <div class="muc-chinh" onclick="toggleDropdown()"><h1>Nướng ngói</h1></div>
+                <div class="muc-menu" id="chonmuc">
+                    <div class="item"><p>Steak bò nướng hồng ngói</p><p class="giasp">129k</p></div>
+                    <div class="item"><p>Bò Kobe nướng hồng ngói</p><p class="giasp">99k</p></div>
+                    <div class="item"><p>Sường nướng BBQ</p><p class="giasp">109k</p></div>
+                    <div class="item"><p>Sường heo nướng BBQ</p><p class="giasp">99k</p></div>
+                    <div class="item"><p>Sường heo nướng Sate</p><p class="giasp">99k</p></div>
+                    <div class="item"><p>Sường heo nướng mật ong</p><p class="giasp">99k</p></div>
+                    <div class="item"><p>Bò cuộn nấm kim châm</p><p class="giasp">79k</p></div>
+                    <div class="item"><p>Ba chỉ bò nướng BBQ</p><p class="giasp">79k</p></div>
+                    <div class="item"><p>Bò cuộn phomai</p><p class="giasp">89k</p></div>
+                    <div class="item"><p>Ba chỉ heo nướng BBQ</p><p class="giasp">79k</p></div>
+                    <div class="item"><p>Ba chỉ heo nướng Sate</p><p class="giasp">79k</p></div>
+                    <div class="item"><p>Mực nướng Sate</p><p class="giasp">99k</p></div>
+                    <div class="item"><p>Bạch tuột nướng mọi</p><p class="giasp">99k</p></div>
+                    <div class="item"><p>Bạch tuột nướng Sate</p><p class="giasp">99k</p></div>
+                    <div class="item"><p>Tôm nướng mọi</p><p class="giasp">89k</p></div>
+                    <div class="item"><p>Tôm nướng Sate</p><p class="giasp">99k</p></div>
+                    <div class="item"><p>Vú heo nướng Sate</p><p class="giasp">79k</p></div>
+                    <div class="item"><p>Vú heo nướng chao</p><p class="giasp">79k</p></div>
+                    <div class="item"><p>Combo củ quả</p><p class="giasp">30k</p></div>
+                </div>
+            </div>
+            <hr>
+            <div class="muc">
+                <div class="muc-chinh" onclick="toggleDropdown()"><h1>Xiêng Nướng</h1></div>
+                <div class="muc-menu" id="chonmuc">
+                    <div class="item"><p>Bò nạt xiên</p><p class="giasp">15k</p></div>
+                    <div class="item"><p>Gân bò Nướng</p><p class="giasp">12k</p></div>
+                    <div class="item"><p>Bò Kobe xiên</p><p class="giasp">17k</p></div>
+                    <div class="item"><p>Bò xiên ớt</p><p class="giasp">16k</p></div>
+                    <div class="item"><p>Da heo xiên</p><p class="giasp">6k</p></div>
+                    <div class="item"><p>Mề gà xiên</p><p class="giasp">8k</p></div>
+                    <div class="item"><p>Cánh gà giữa xiên</p><p class="giasp">15k</p></div>
+                    <div class="item"><p>Sụn chân gà xiên</p><p class="giasp">12k</p></div>
+                    <div class="item"><p>Chân gà rút xương</p><p class="giasp">10k</p></div>
+                    <div class="item"><p>Lồng gà xiên ( 5 que )</p><p class="giasp">15k</p></div>
+                    <div class="item"><p>Lưỡi vịt xiên</p><p class="giasp">7k/Lưỡi</p></div>
+                    <div class="item"><p>Mực nguyên con xiên</p><p class="giasp">15k/Xiên</p></div>
+                    <div class="item"><p>Mực miếng xiên</p><p class="giasp">15k/Xiên</p></div>
+                    <div class="item"><p>Râu mực to xiên</p><p class="giasp">13k/Xiên</p></div>
+                    <div class="item"><p>Râu bạch tuột khúc xiên</p><p class="giasp">13k/Xiên</p></div>
+                    <div class="item"><p>Ếch</p><p class="giasp">20k/Con</p></div>
+                    <div class="item"><p>Cá nục nướng</p><p class="giasp">30k/Con</p></div>
+                    <div class="item"><p>Cá đuối nướng giấy bạc</p><p class="giasp">79k/Phần</p></div>
+                    <div class="item"><p>Tôm bóc nõn xiên</p><p class="giasp">15k/Xiên</p></div>
+                    <div class="item"><p>Tôm xiên nguyên con</p><p class="giasp">12k/Xiên</p></div>
+                    <div class="item"><p>Ốc xiên</p><p class="giasp">12k/Xiên</p></div>
+                    <div class="item"><p>Bao tử Basa</p><p class="giasp">6k/Xiên</p></div>
+                    <div class="item"><p>Đậu bắp xiên</p><p class="giasp">10k/Xiên</p></div>
+                    <div class="item"><p>Lạp xưởng nướng</p><p class="giasp">15k</p></div>
+                    <div class="item"><p>Cải thảo xiên</p><p class="giasp">10k/Xiên</p></div>
+                    <div class="item"><p>Nấm kim châm xiên</p><p class="giasp">10k</p></div>
+                    <div class="item"><p>Cà tím nướng mỡ hành</p><p class="giasp">29k</p></div>
+                    <div class="item"><p>Hầu nướng tỏi</p><p class="giasp">12k/Con</p></div>
+                    <div class="item"><p>Hầu nướng mỡ hành</p><p class="giasp">10k/Con</p></div>
+                    <div class="item"><p>Hầu nướng phô mai</p><p class="giasp">12k/Con</p></div>
+                    <div class="item"><p>Nấm kim châm giấy bạc</p><p class="giasp">59k</p></div>
+                </div>
+            </div>
+            <hr>
+            <div class="muc">
+                <div class="muc-chinh" onclick="toggleDropdown()"><h1>Nước</h1></div>
+                <div class="muc-menu" id="chonmuc">
+                    <div class="item"><p>Sting</p><p class="giasp">16k</p></div>
+                    <div class="item"><p>Pepsi</p><p class="giasp">16k</p></div>
+                    <div class="item"><p>7 Up</p><p class="giasp">16k</p></div>
+                    <div class="item"><p>Trà sâm</p><p class="giasp">20k</p></div>
+                    <div class="item"><p>Nước suối</p><p class="giasp">10k</p></div>
+                </div>
+            </div>
+            <hr>
+            <div class="muc">
+                <div class="muc-chinh" onclick="toggleDropdown()"><h1>Món Thêm</h1></div>
+                <div class="muc-menu" id="chonmuc">
+                    <div class="item"><p>Mì tôm</p><p class="giasp">5k</p></div>
+                    <div class="item"><p>Rau lẩu</p><p class="giasp">15k</p></div>
+                    <div class="item"><p>Bò mỹ thả lẩu</p><p class="giasp">50k</p></div>
+                    <div class="item"><p>Bắp bò thả lẩu</p><p class="giasp">50k</p></div>
+                    <div class="item"><p>Bún</p><p class="giasp">15k</p></div>
+                    <div class="item"><p>Mực lẩu</p><p class="giasp">50k</p></div>
+                    <div class="item"><p>Tôm lẩu</p><p class="giasp">50k</p></div>
+                    <div class="item"><p>Lá sách lẩu</p><p class="giasp">50k</p></div>
+                    <div class="item"><p>Viên thả lẩu</p><p class="giasp">30k</p></div>
+                    <div class="item"><p>Kim chi</p><p class="giasp">30k</p></div>
+                    <div class="item"><p>Rau đồ nướng</p><p class="giasp"></p></div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <p class="chuy">đôi khi các đề mục chưa hiển thị hết món vui lòng trượt danh mục để xem thêm</p>
+    <script src="../js/behavior.js"></script>
+    <script src="../js/animation.js"></script>    
+    <a href="../html/order.html"><div id="cartIcon" onclick="toggleCart()"></div><img id="nia" src="../source/img/carticon.png" alt="Giỏ hàng"></a>
+    <div class="footer">
+        <p>© 2024 Scam Air Port. All rights reserved.<br>Trang web đang trong quá trình phát triển còn nhiều sai sót mong quý vị thông cảm nhó.</p>
+    </div>
+</body>
+</html>

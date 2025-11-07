@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="../css/giaodientong.css">
+    <link rel="stylesheet" href="../css/khaitrienfont.css">
+    <link rel="stylesheet" href="../css/animation.css">
+</head>
+<body>
+    <!--<div class="background"><img src="../source/img/test.jpg"></div>-->
+    <div class="background">
+        <video loop muted autoplay><source src="../source/video/scam.mp4"></video>
+    </div>    <nav>
+        <ul class="dieuhuong">
+            <li><a href="/html/trangchu.html">Trang chủ</a></li>
+            <li><a href="/html/menu.html">Menu</a></li>
+            <li><a href="/html/about.html">About</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="dieuhuongphu">
+            <li><a href="/html/trangchu.html">Trang chủ</a></li>
+            <li><a href="/html/menu.html">Menu</a></li>
+            <li ><a style="color:rgb(255, 159, 159);" href="/html/order.html">Order</a></li>
+        </ul>
+    </nav>
+    <div class="slogan"><h1 class="gioithieu">Giỏ hàng của bạn</h1></div>
+        <div class="contentthongbao"><div class="thongbao">
+            <p>Trang đặt món hiện đang trong quá trình phát triển, để order vui lòng liên hệ với nhân viên quán</p>
+            <br>
+            <p>Chân thành cảm ơn quý khách đã ủng hộ</p>
+        </div>
+    </div>
+    <form class="form-content">
+        <form id="myForm">
+            <label class="tagnote">Quý khách có thể ghi lại món ăn bên dưới và đưa cho nhân viên ạ (Không bị mất khi thoát trang này):</label>
+            <textarea id="note" name="note" ></textarea><br><br>
+        </form>
+        <script>
+            const note = document.getElementById("note");
+
+            // 🔹 Khi người dùng nhập, lưu vào localStorage
+            note.addEventListener("input", () => {
+                localStorage.setItem("ghiChu", note.value);
+            });
+
+            // 🔹 Khi tải lại trang, tự động điền lại nội dung cũ
+            window.addEventListener("load", () => {
+                const savedNote = localStorage.getItem("ghiChu");
+                if (savedNote) note.value = savedNote;
+            });
+        </script>
+    </form>
+    <script src="../js/addcart.js"></script>
+    <script src="../js/animation.js"></script>
+    <div class="footer">
+        <p>© 2025 Scam Air Port. All rights reserved.<br>Trang web đang trong quá trình phát triển còn nhiều sai sót mong quý vị thông cảm nhó</p>
+    </div>
+</body>
+</html>

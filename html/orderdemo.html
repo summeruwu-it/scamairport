@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="../css/giaodientong.css">
+    <link rel="stylesheet" href="../css/khaitrienfont.css">
+    <link rel="stylesheet" href="../css/animation.css">
+</head>
+<body>
+    <div class="background"><img src="../source/img/20241208_095158601_iOS.jpg"></div>
+    <nav>
+        <ul class="dieuhuong">
+            <li><a href="/html/trangchu.html">Trang chủ</a></li>
+            <li><a href="/html/menu.html">Menu</a></li>
+            <li><a href="/html/about.html">About</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="dieuhuongphu">
+            <li><a href="/html/trangchu.html">Trang chủ</a></li>
+            <li><a href="/html/menu.html">Menu</a></li>
+            <li ><a style="color:rgb(255, 159, 159);" href="/html/order.html">Order</a></li>
+        </ul>
+    </nav>
+    <div class="slogan"><h1 class="gioithieu">Giỏ hàng của bạn</h1></div>
+    <div class="form-content">
+        <form id="myForm">
+            <label>Họ tên nhận món:</label>
+            <input type="text" name="name" required>
+
+            <div class="row">
+                <div class="group">
+                    <label class="tagtable">Số bàn:</label>
+                    <input id="table" type="text" name="table" required>
+                </div>
+                <div class="group">
+                    <label class="tagphone">4 số cuối điện thoại:</label>
+                    <input id="phone" type="tel" name="phone" required>
+                </div>
+            </div>
+
+            <label class="tagnote">Danh sách món:</label>
+            <textarea id="note" name="note" ></textarea><br><br>
+
+            <label class="tagnote">Ghi chú cho quán:</label>
+            <textarea id="note" name="note" ></textarea><br><br>
+
+
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+    <script src="../js/addcart.js"></script>
+    <div class="footer">
+        <p>© 2025 Scam Air Port. All rights reserved.<br>Trang web đang trong quá trình phát triển còn nhiều sai sót mong quý vị thông cảm nhó</p>
+    </div>
+</body>
+</html>
