@@ -38,7 +38,7 @@ a{
 }
 .background video{
     width: 100%;
-    min-height: fit-content;
+
     object-fit: cover;
     object-position: top ;
     transform: translateY(-5vw);
