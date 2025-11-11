@@ -1,6 +1,6 @@
 const config = {
-  threshold: 0.1,     // 10% phần tử xuất hiện là kích hoạt
-  rootMargin: "0px 0px 20px 0px",  // Có thể đổi thành "0px 0px -50px 0px" để chạy sớm hơn
+  threshold: 0,     // 10% phần tử xuất hiện là kích hoạt
+  rootMargin: "50px 0px -30px 0px",  // Có thể đổi thành "0px 0px -50px 0px" để chạy sớm hơn
   animateOnce: false, // ❗ Đặt false nếu muốn chạy lại mỗi khi cuộn
 };
 

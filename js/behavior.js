@@ -1,5 +1,5 @@
 /* Xử lý sự kiện click vào card để cuộn và thêm lớp active */
-
+/*
 const cards = document.querySelectorAll('.card');
 const scrollContainer = document.querySelector('.scroll-container');
 
@@ -34,6 +34,7 @@ cards.forEach(card => {
     });
   });
 });
+*/
 
 /* Xử lý menu thả xuống trong mục */
 
@@ -49,3 +50,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
