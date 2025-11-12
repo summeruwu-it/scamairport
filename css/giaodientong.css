@@ -272,14 +272,56 @@ hr{
     padding: 10px;
     margin-right: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     cursor: pointer;
     font-size: clamp(14px, 5vw, 25px);
 }
 
-.item:hover {
-    background-color: #a3a3a3;
+.lv2 {
+    overflow: hidden;
+    display: flex; 
+    flex-direction: row;
+    width: 100%;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0px 10px 0px 15px;
+    border-radius: 8px;
+    transition: all 0.5s ease-in;
+    max-height: 0px;
+    opacity: 0;
+    justify-content: space-between;
+    align-items: center; 
+    margin-left: -15px; /* âm bằng đúng padding cha */
+    margin-right: -15px;
+    width: calc(100% + 30px); /* cộng lại phần âm để bù */
+    
 }
+
+.lv2.show {
+    margin: 15px 0 0 0;
+    flex-direction: row;
+    display: flex; /* ❗ bật lên khi mở */
+    max-height:300px; /* tuỳ chỉnh hoặc auto bằng JS */
+    padding: 10px 10px 10px 15px;
+    align-items: center; 
+
+}
+.chitietcombo{
+    width: 50%;
+    font-size: 80%;
+    line-height: 150%;
+}
+.anhcombo{
+    width: 120px;
+    height: 200px;
+}
+.lv2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .more{
     color: rgb(0, 0, 0);
     justify-content: center;
