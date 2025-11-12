@@ -4,7 +4,7 @@ const config = {
   animateOnce: false, // ❗ Đặt false nếu muốn chạy lại mỗi khi cuộn
 };
 
-const hiddenElements = document.querySelectorAll(".muc,.demuc,.topmot,.tophai,hr,.card,.item,.chuy,.noidungabout,.chitietabout, .contentthongbao");
+const hiddenElements = document.querySelectorAll(".muc,.demuc,.topmot,.tophai,hr,.card,.item,.chuy,.noidungabout,.chitietabout,.contentthongbao");
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {

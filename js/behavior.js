@@ -45,8 +45,21 @@ document.addEventListener('DOMContentLoaded', function () {
     const chinh = muc.querySelector('.muc-chinh');
     const menu = muc.querySelector('.muc-menu');
 
+    // Toggle menu chính
     chinh.addEventListener('click', () => {
       menu.classList.toggle('show');
+    });
+
+    // Toggle menu cấp 2
+    const items = muc.querySelectorAll('.item');
+    items.forEach(item => {
+      const subMenu = item.querySelector('.lv2'); // chú ý: .lv2
+      if (subMenu) {
+        item.addEventListener('click', (e) => {
+          e.stopPropagation();
+          subMenu.classList.toggle('show');
+        });
+      }
     });
   });
 });
