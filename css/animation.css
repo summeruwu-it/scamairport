@@ -1,6 +1,6 @@
 
 /* ✅ Phần chung cho mọi phần tử ẩn trước khi xuất hiện */
-.muc,hr,.item,.chuy,.noidungabout,.chitietabout, .contentthongbao{
+.muc,hr,.item,.chuy,.noidungabout,.chitietabout, .contentthongbao,.demuc{
     opacity: 0;
     transform: translateY(50px);
     filter: blur(10px);
@@ -15,7 +15,6 @@
     transition: all 0.5s ease-out;
 }
 
-
 .card{
   opacity: 0;
   transform: translateY(50px);
@@ -24,7 +23,7 @@
   will-change: transform, opacity, filter;
 }
 
-.topmot,.demuc{
+.topmot{
     opacity: 0;
     transform: translateX(-100px);
     filter: blur(10px);

@@ -152,7 +152,12 @@ p.motasanpham.hai{
     margin-right:2vw;
 }
 .giasanpham{
-    font-size: 5vw;
+    font-size: clamp(10px, 7vw, 60px);
+    margin-top: auto;
+    color: #E91E63;
+}
+.nhan{
+    font-size: clamp(10px, 6vw, 30px);
     margin-top: auto;
     color: #E91E63;
 }
@@ -222,7 +227,7 @@ p.motasanpham.hai{
 
 
 .muc{
-    margin-left: 4vw;
+
     font-size: 6vw;
     padding-bottom: 2vw;
 }
@@ -244,7 +249,7 @@ hr{
     border-radius: 10px;
     height: 2px;
     background-color: #000000;
-    margin: 0 2vw 4vw;
+    margin: 0 2vw 2vw;
 }
 
 .muc-chinh {
@@ -253,13 +258,14 @@ hr{
 }
 .muc-chinh h1{
     font-size: clamp(14px, 7vw, 50px);
+    text-align: center;
 }
 .muc-menu {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-in;
     border-radius: 4px;
-    margin-top: 5px;
+    margin-top: 0.5vw;
 }
 
 /* Khi mở menu */
@@ -270,14 +276,20 @@ hr{
 }
 .item {
     padding: 10px;
-    margin-right: 20px;
+    margin-right: 3vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     cursor: pointer;
     font-size: clamp(14px, 5vw, 25px);
+    margin-left: 3vw;
 }
 
+.nhan{
+    font-size: clamp(10px, 4vw, 30px);
+    margin-bottom: 0.5vw;
+    color: #E91E63;
+}
 .lv2 {
     overflow: hidden;
     display: flex; 
@@ -295,7 +307,6 @@ hr{
     margin-left: -15px; /* âm bằng đúng padding cha */
     margin-right: -15px;
     width: calc(100% + 30px); /* cộng lại phần âm để bù */
-    
 }
 
 .lv2.show {
@@ -305,12 +316,30 @@ hr{
     max-height:300px; /* tuỳ chỉnh hoặc auto bằng JS */
     padding: 10px 10px 10px 15px;
     align-items: center; 
-
 }
+#daivl{
+    opacity: 0;
+    transform: translateY(-20px);
+    filter: blur(10px);
+    max-height: 0;
+    transition: all 1s ease;
+}
+#daivl.show{
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+    max-height: 700px;
+}
+
 .chitietcombo{
     width: 50%;
     font-size: 80%;
     line-height: 150%;
+}
+.tieudechitietcombo{
+    font-size: clamp(16px, 6vw, 30px);
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 .anhcombo{
     width: 120px;
